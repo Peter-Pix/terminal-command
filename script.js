@@ -1040,7 +1040,7 @@ const commandData = [
         "os": "Linux (Debian/Ubuntu)",
         "category": "Package Management",
         "frequency": "High",
-        "tooltip": "Package management for Debian systems",
+        "tooltip": "Package management for Debian",
         "usage": "apt install package_name",
         "description": "Advanced Package Tool for installing, updating, and removing software on Debian-based systems."
     },
@@ -2157,4 +2157,5 @@ document.addEventListener('DOMContentLoaded', () => {
             closeDetailModal();
         }
     });
+
 });
