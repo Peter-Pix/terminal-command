@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Developer's Terminal Command Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Terminal Command Companion</h1>
+        <p>Your quick reference for Linux, macOS, and Windows commands.</p>
+    </header>
+
+    <main>
+        <!-- Search Bar -->
+        <section class="search-container">
+            <input type="text" id="commandSearch" placeholder="Search commands (e.g., 'ls', 'cd', 'mkdir')...">
+            <div id="searchResultsCount"></div>
+        </section>
+
+        <!-- Command Display Area -->
+        <section id="commandListContainer">
+            <!-- Commands will be injected here by JavaScript -->
+            <p class="loading-message">Loading commands...</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="advantages-section">
+        <h2>Why Master the Terminal?</h2>
+        <div class="advantages-content">
+            <div class="advantage-card">
+                <h3>🚀 Speed & Efficiency</h3>
+                <p>Executing complex tasks with a single line is vastly faster than navigating multiple GUI menus. Think "pipelining" and automation.</p>
+            </div>
+            <div class="advantage-card">
+                <h3>🤖 Automation Power</h3>
+                <p>Scripts (Bash, PowerShell) allow you to automate repetitive tasks—saving hours every week.</p>
+            </div>
+            <div class="advantage-card">
+                <h3>🌐 Remote Management</h3>
+                <p>SSH access lets you manage servers anywhere in the world directly from your command line.</p>
+            </div>
+            <div class="advantage-card">
+                <h3>💡 Deeper Understanding</h3>
+                <p>Using the terminal forces you to understand the underlying structure of your operating system.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Command Detail Modal/Expansion Area -->
+    <div id="commandDetailModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="detailCommandName"></h2>
+            <p id="detailCommandOS"></p>
+            
+            <div class="usage-example">
+                <h3>Usage Example:</h3>
+                <pre><code id="detailCommandUsage"></code></pre>
+                <button id="copyCommandBtn">Copy Command</button>
+                <span id="copyStatus" style="margin-left: 10px; color: green;"></span>
+            </div>
+            
+            <h3>Description:</h3>
+            <p id="detailCommandDescription"></p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+<footer style="padding: 7px; margin-left: 40%; font-size: 12px; color: grey">
+Terminal Commands © 2023 | Developer tool by Petr Piskáček
+</footer>
+</html>
